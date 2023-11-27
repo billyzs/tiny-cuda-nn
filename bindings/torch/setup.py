@@ -88,7 +88,7 @@ if os.system("nvcc --version") == 0:
 		cuda_version = parse_version(cuda_version.group(1))
 		print(f"Detected CUDA version {cuda_version}")
 		if cuda_version >= parse_version("11.0"):
-			cpp_standard = 17
+			cpp_standard = 14
 
 		supported_compute_capabilities = [
 			cc for cc in compute_capabilities if cc >= min_supported_compute_capability(cuda_version) and cc <= max_supported_compute_capability(cuda_version)
