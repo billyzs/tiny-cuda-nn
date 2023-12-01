@@ -276,6 +276,13 @@ target_include_directories(tiny-cuda-nn PUBLIC
 	"dependencies/cutlass/tools/util/include"
 	"dependencies/fmt/include"
 )
+target_include_directories(tiny-cuda-nn SYSTEM PRIVATE
+	"/home/zhousha/.local/inc_1"
+ 	"/home/zhousha/.local/inc_2"
+ 	"/home/zhousha/.local/inc_3"
+ 	"/home/zhousha/.local/inc_4"
+ 	"/home/zhousha/.local/inc_5"
+)
 target_link_libraries(tiny-cuda-nn PUBLIC ${CUDA_LIBRARIES} ${TCNN_LIBRARIES} fmt)
 
 if (TCNN_BUILD_EXAMPLES)
