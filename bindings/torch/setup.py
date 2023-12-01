@@ -120,10 +120,10 @@ if os.name == "posix":
 	base_cflags = [
 		f"-std=c++{cpp_standard}",
 		"-isystem /home/zhousha/.local/inc_1",
-		"-isystem /home/zhousha/.local/inc_2",
-		"-isystem /home/zhousha/.local/inc_3",
+		"-isystem /home/zhousha/.local/inc_2/10/",
+		"-isystem /home/zhousha/.local/inc_3/10/",
 		"-isystem /home/zhousha/.local/inc_4",
-		"-isystem /home/zhousha/.local/inc_5",
+		"-isystem /home/zhousha/.local/inc_5/include/",
 	]
 	base_nvcc_flags += [
 		"-Xcompiler=-Wno-float-conversion",
